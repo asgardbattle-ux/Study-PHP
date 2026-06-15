@@ -32,19 +32,23 @@
     $testBook = new Book();
     var_dump($testBook instanceof Book); // bool(true)
 
-    $book1 = new Book; /* object - an instance of a Book */
+    $book1 = new Book(); /* object - an instance of a Book */
     $book1->title = "Harry Potter";
     $book1->author = "JK Rowling";
     $book1->pages = 400;
 
-    $book2 = new Book; /* object - an instance of a Book */
+    $book2 = new Book(); /* object - an instance of a Book */
     $book2->title = "Lord of The Rings";
     $book2->author = "Tolken";
     $book2->pages = 700;
 
     echo $book1->author;
-    echo "<br>";
+    echo "<br><br>";
     echo $book2->author;
+    echo "<br><br><b>Book1:</b><br>";
+    var_dump($book1);
+    echo "<br><br><b>Book2:</b><br>";
+    var_dump($book2);
 
     ?>
 </body>

@@ -75,8 +75,12 @@
         }
     }
 
-    $volvo = new Car;
+    $volvo = new Car();
+    echo "<br>";
+    var_dump($volvo); // Print: bject(Car)#3 (2) { ["name"]=> NULL ["color"]=> NULL }
     $volvo->just_set('Volvo', 'Black'); // as we don't use a constructor into the class, we have to set the object properties after it has been initialized
+    echo "<br>";
+    var_dump($volvo); // Print: object(Car)#3 (2) { ["name"]=> string(5) "Volvo" ["color"]=> string(5) "Black" 
     ?>
 </body>
 
