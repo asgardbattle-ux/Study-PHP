@@ -11,11 +11,11 @@
     <?php
     class Student
     {
-        public $name;
-        public $major;
-        public $gpa;
+        public string $name;
+        public string $major;
+        public int $gpa;
 
-        function __construct($aName, $aMajor, $aGpa)
+        function __construct(string $aName, string $aMajor, int $aGpa)
         {
             $this->name = $aName;
             $this->major = $aMajor;
