@@ -15,6 +15,25 @@
         <li>
             <a href="./02-conditionals-and-booleans.php">02-conditionals-and-booleans.php</a>
         </li>
+        <li>
+            <a href="./03-arrays.php">03-arrays.php</a>
+        </li>
+        </li>
+        <li>
+            <a href="./04-associative-arrays.php">04-assciative-arrays.php</a>
+        </li>
+        <li>
+            <a href="./05-functions-and-filters.php">05-functions-and-filters.php</a>
+        </li>
+        <li>
+            <a href="./06-1-lambda-functions-lambda-sample.php">06-1-lambda-functions-lambda-sample copy.php</a>
+        </li>
+        <li>
+            <a href="./06-2-lambda-functions.php">06-2-lambda-functions.php</a>
+        </li>
+        <li>
+            <a href="./06-3-lambda-array_filter.php">06-3-lambda-array_filter.php</a>
+        </li>
     </ul>
 </body>
 
