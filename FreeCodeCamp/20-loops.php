@@ -220,6 +220,7 @@
 
     echo "<br>";
     foreach ($myCar as $x => $y) {
+        echo '- - - - -';
         echo "$x: $y <br>";
     }
     /** Prints:
