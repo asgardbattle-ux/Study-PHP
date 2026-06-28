@@ -30,22 +30,32 @@
         ]
     ];
 
-    // Anonymous functions
+    // Anonymous ( Labmda ) functions
     // - could be assigned to a variable;
     // - could be passed to another function.
 
-    // As filterByAuthor kind of locks us to use the function exactly for filtering by author. If another filter is required, e.g. by year, we would copy the function, name it filterByYear, substitute here and there variable names and voilda. BUT, that is a lot of unnecessary code. That is why, we are creating 1 'main' function
+    // filterByAuthor kind of locks us to use the function exactly for filtering by author. If another filter is required, e.g. by year, we would copy the function, name it filterByYear, substitute here and there variable names and voilda. BUT, that is a lot of unnecessary code. That is why, we are creating 1 'main' function
 
-    // COMPARE WITH "06-2-lambda-functions.php" to check what we are substuting with array_filter() below
-    // array_filter() does the job we were described in "06-2-lambda-functions.php", lines 39-50
+    function filter($items, $fn)
+    {
+        $filteredItems = [];
 
-    $filteredBooks = array_filter(
+        foreach ($items as $item) {
+            if ($fn($item)) {
+                $filteredItems[] = $item;
+            }
+        }
+
+        return $filteredItems;
+    }
+
+    /* anonymous(lambda) function */
+    $filteredBooks = filter(
         $books,
-        /* anonymous(lambda) function */
         function ($book) {
             return $book['releaseYear'] >= 2000;
-        }
-    ); /* (array, key, value of the key) */;
+        } /* by passing the function as an argument, we can control what the expression checks. In the meantime, 'filter' function is not bound to anything specific, such as - author, category, release year, etc. - it could recieve as much different expressions to be checked as we want */
+    );
     ?>
 
     <ul>

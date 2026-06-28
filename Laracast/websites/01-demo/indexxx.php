@@ -10,6 +10,9 @@
 <body>
     <ul type="square">
         <li>
+            <a href="./practice.php">practice.php</a>
+        </li>
+        <li>
             <a href="./01-index-variables.php">01-index-variables.php</a>
         </li>
         <li>
