@@ -128,9 +128,12 @@
             return $resultArr;
         }
 
-        $resultItems = filterItems($books, function ($array) {
-            return $array['author'] === 'Andy Weir' && $array['releaseYear'] >= 2001;
-        });
+        $resultItems = filterItems(
+            $books,
+            function ($array) {
+                return $array['author'] === 'Andy Weir' && $array['releaseYear'] >= 2001;
+            }
+        );
         ?>
 
         <h1>Filtering result :):</h1>

@@ -31,7 +31,7 @@
     <h1>
         <!-- <?php echo $message; ?> -->
         <!-- Shorthand syntax for echo -->
-         <?= $message ?>;
+        <?= $message ?>;
     </h1>
 </body>
 

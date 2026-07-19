@@ -37,6 +37,12 @@
         <li>
             <a href="./06-3-lambda-array_filter.php">06-3-lambda-array_filter.php</a>
         </li>
+        <li>
+            <a href="./06-4-lambda-array_filter.php">06-4-lambda-array_filter.php</a>
+        </li>
+        <li>
+            <a href="./06-5-fn-and-lambda-practice.php">06-5-fn-and-lambda-practice.php</a>
+        </li>
     </ul>
 </body>
 

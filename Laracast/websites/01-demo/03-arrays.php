@@ -23,12 +23,12 @@
         <?php foreach ($books as $book) {
             echo "<li>{$book}™️</li>";
         }
-        // if adding a symbol PHP doesn't like while rendering, we could wrap the variable in {} - saying to PHP render this
+        // when adding a symbol PHP doesn't like while rendering, we could wrap the variable in {} - saying to PHP render this
         ?>
 
         <!-- Shorthand syntax-->
         <?php foreach ($books as $book) : ?>
-            <!-- <li><?= $book ?></li> // main echo syntax -->
+            <!-- <li><?php echo $book ?></li> // main echo syntax -->
             <li><?= $book ?></li> <!-- shorthand echo syntax -->
         <?php endforeach ?>
     </ul>
