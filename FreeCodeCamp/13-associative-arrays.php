@@ -18,9 +18,18 @@
     $grades = array("Jim" => "6", "Pam" => "4", "John" => "5");
     echo $grades["John"];
     echo "<br />";
-    /*
-    In associative array we are accessing values by their key names
-    */
+    /* In associative array we are accessing values by their key names */
+
+    // Arrays into array
+    $grades = ["Jim" => "6", "Pam" => "4", "John" => "5"];
+    $grades2 = [
+        ["Jim" => "6"],
+        ["Pam" => "4"],
+        ["John" => "5"]
+    ];
+    var_dump($grades); // array(3) { ["Jim"]=> string(1) "6" ["Pam"]=> string(1) "4" ["John"]=> string(1) "5" }
+    echo '<br/>';
+    var_dump($grades2[1]['Pam']); // string(1) "4"
 
     // Modify ass array element
     $grades["John"] = "6";
