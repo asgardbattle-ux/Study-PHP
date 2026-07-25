@@ -138,8 +138,8 @@
 
         <h1>Filtering result :):</h1>
         <ul>
-            <?php foreach ($resultItems as $book) : ?>
-                <li>Book: <?= $book['name'] ?>, written by: <?= $book['author'] ?>, released in: <?= $book['releaseYear'] ?></li>
+            <?php foreach ($resultItems as $bookInfo) : ?>
+                <li>Book: <?= $bookInfo['name'] ?>, written by: <?= $bookInfo['author'] ?>, released in: <?= $bookInfo['releaseYear'] ?></li>
             <?php endforeach; ?>
         </ul>
 
@@ -155,8 +155,8 @@
 
         <h1>Filtering result :):</h1>
         <ul>
-            <?php foreach ($resultItems as $book) : ?>
-                <li>Book: <?= $book['name'] ?>, written by: <?= $book['author'] ?>, released in: <?= $book['releaseYear'] ?></li>
+            <?php foreach ($resultItems as $bookInfo) : ?>
+                <li>Book: <?= $bookInfo['name'] ?>, written by: <?= $bookInfo['author'] ?>, released in: <?= $bookInfo['releaseYear'] ?></li>
             <?php endforeach; ?>
         </ul>
     </div>
