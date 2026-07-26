@@ -43,6 +43,9 @@
         <li>
             <a href="./06-5-fn-and-lambda-practice.php">06-5-fn-and-lambda-practice.php</a>
         </li>
+        <li>
+            <a href="../07-code-organization/">/07-code-organization/ folder</a>
+        </li>
     </ul>
 </body>
 
