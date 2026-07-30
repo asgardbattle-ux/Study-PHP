@@ -36,6 +36,6 @@ $filteredBooks = array_filter(
     function ($book) {
         return $book['releaseYear'] >= 2000;
     }
-); /* (array, key, value of the key) */;
+);
 
 require "index.view.php"; // require serves as load the view
