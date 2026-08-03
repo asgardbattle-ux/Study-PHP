@@ -1,0 +1,24 @@
+<?php
+
+// Connect to the database, and execute a query
+class Database
+{
+    public $connection;
+
+    public function __construct()
+    {
+        $dsn = "mysql:host=localhost;port=3306;dbname=myapp;user=root;charset=utf8mb4";
+
+        $this->connection = new PDO($dsn);
+    }
+    public function query($query)
+    {
+        $statement = $this->connection->prepare($query);
+        $statement->execute();
+
+        // return $statement->fetchAll(PDO::FETCH_ASSOC); // fetchAll returns assocciative array - list of lists
+        // return $statement->fetchAll(PDO::FETCH_ASSOC); // fetch returns array with single element
+
+        return $statement;
+    }
+}
